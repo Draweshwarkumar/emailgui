@@ -22,7 +22,7 @@ export class EmailComponent {
     message: ""
   };
 
-  constructor(private backendService: BackendService) {} // Inject BackendService
+  constructor(private email: BackendService) {} // Inject BackendService
 
   doSubmitForm() {
     console.log("Submit method triggered");
