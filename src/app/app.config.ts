@@ -7,5 +7,5 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatButtonModule} from '@angular/material/button';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration(), provideAnimationsAsync('noop'), provideAnimationsAsync(),MatButtonModule]
+  providers: [provideRouter(routes), provideClientHydration(), provideAnimationsAsync('noop'), provideAnimationsAsync()]
 };
