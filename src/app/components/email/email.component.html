@@ -8,8 +8,8 @@
       </mat-form-field>
 
       <mat-form-field class="field" appearance="outline">
-        <mat-label>Subject</mat-label>
-        <input name="Subject" [(ngModel)] = "data.Subject" matInput>
+        <mat-label>subject</mat-label>
+        <input name="Subject" [(ngModel)] = "data.subject" matInput>
       </mat-form-field>
 
       <mat-form-field class="example-full-width field">
@@ -18,6 +18,9 @@
       </mat-form-field>
 
       <div class="text-center">
+
+        <mat-spinner *ngIf="flag" style="margin: auto;"></mat-spinner>
+
         <button type="submit" mat-raised-button color="primary">Send</button>
         <button type="reset" mat-raised-button color="accent">Reset</button>
       </div>

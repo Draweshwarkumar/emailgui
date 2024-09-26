@@ -14,3 +14,4 @@ export class BackendService {
     return this.http.post(`${this.baseUrl}sendemail`,data)
   }
 }
+
